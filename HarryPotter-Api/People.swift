@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  People.swift
 //  HarryPotter-Api
 //
 //  Created by Austin Potts on 9/8/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Character: Decodable {
+struct People {
     let name: String
 }

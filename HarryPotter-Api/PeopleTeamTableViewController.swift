@@ -1,5 +1,5 @@
 //
-//  CharactersTableViewController.swift
+//  PeopleTeamTableViewController.swift
 //  HarryPotter-Api
 //
 //  Created by Austin Potts on 9/8/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharactersTableViewController: UITableViewController {
+class PeopleTeamTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
