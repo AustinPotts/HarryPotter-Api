@@ -14,7 +14,7 @@ class PeopleController {
     let baseURL = URL(string: "http://hp-api.herokuapp.com/api/characters/")!
     
     func getPeople(searchTerm: String, completion: @escaping (Result<People, Error>)-> Void) {
-        let requestURL = baseURL.appendingPathComponent(searchTerm)
+        let requestURL = baseURL.appendingPathComponent(searchTerm.capitalized)
      
         URLSession.shared.dataTask(with: requestURL) { (data, _, error) in
             if let error = error {

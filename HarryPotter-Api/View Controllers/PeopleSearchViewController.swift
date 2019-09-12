@@ -8,12 +8,42 @@
 
 import UIKit
 
-class PeopleSearchViewController: UIViewController {
+class PeopleSearchViewController: UIViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
 
+    var peopleController: PeopleController?
+    var people: People? {
+        didSet{
+            updateViews()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        searchBar.delegate = self
+        
+    }
+    
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchTerm = searchBar.text else {return}
+        peopleController?.getPeople(searchTerm: searchTerm) { (people) in
+            guard let searchedPeople = try? people.get() else {return}
+            DispatchQueue.main.async {
+                self.people = searchedPeople
+            }
+        }
+    }
+    
+    
+    func updateViews(){
+        guard isViewLoaded else{return}
+        guard let people = people else{return}
+        title = people.name
     }
     
 

@@ -79,7 +79,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="uUN-FW-cYU"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchBar" destination="yFb-AB-Jxk" id="lNm-HK-I8G"/>
+                        <outlet property="searchBar" destination="yFb-AB-Jxk" id="wvB-ti-gyY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wo-9r-ps3" userLabel="First Responder" sceneMemberID="firstResponder"/>
