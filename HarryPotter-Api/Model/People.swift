@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct People {
+struct People: Decodable {
     let name: String
 }

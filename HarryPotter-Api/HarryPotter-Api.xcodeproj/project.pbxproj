@@ -41,13 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45F0F76A23255F7A00B4FF8A = {
+		458493292329EBA2000EBA15 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
 				45F0F79A2325DF3B00B4FF8A /* PeopleController.swift */,
-				45F0F7982325DC0600B4FF8A /* People.swift */,
-				45F0F7962325DB7900B4FF8A /* PeopleSearchViewController.swift */,
-				45F0F7942325DB6500B4FF8A /* PeopleTeamTableViewController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		45F0F76A23255F7A00B4FF8A = {
+			isa = PBXGroup;
+			children = (
+				458493292329EBA2000EBA15 /* Model Controller */,
 				45F0F78F2325618200B4FF8A /* Model */,
 				45F0F78C2325611700B4FF8A /* View Controllers */,
 				45F0F77523255F7A00B4FF8A /* HarryPotter-Api */,
@@ -78,6 +83,8 @@
 		45F0F78C2325611700B4FF8A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45F0F7942325DB6500B4FF8A /* PeopleTeamTableViewController.swift */,
+				45F0F7962325DB7900B4FF8A /* PeopleSearchViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 		45F0F78F2325618200B4FF8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45F0F7982325DC0600B4FF8A /* People.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
