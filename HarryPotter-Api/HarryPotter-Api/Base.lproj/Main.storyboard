@@ -13,7 +13,7 @@
         <!--Characters-->
         <scene sceneID="u2C-cY-KOE">
             <objects>
-                <tableViewController id="myD-ws-lAG" customClass="PeopleTeamTableViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="myD-ws-lAG" customClass="CountryTeamTableViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="roR-cG-wFw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
         <!--Search a Character-->
         <scene sceneID="Jut-Zb-wox">
             <objects>
-                <viewController id="fhv-sS-hZG" customClass="PeopleSearchViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fhv-sS-hZG" customClass="CountrySearchViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zs-BE-ntl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

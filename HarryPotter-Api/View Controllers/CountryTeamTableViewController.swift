@@ -1,14 +1,14 @@
 //
-//  PeopleTeamTableViewController.swift
+//  CountryTeamTableViewController.swift
 //  HarryPotter-Api
 //
-//  Created by Austin Potts on 9/8/19.
+//  Created by Austin Potts on 9/14/19.
 //  Copyright © 2019 Lambda School. All rights reserved.
 //
 
 import UIKit
 
-class PeopleTeamTableViewController: UITableViewController {
+class CountryTeamTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
