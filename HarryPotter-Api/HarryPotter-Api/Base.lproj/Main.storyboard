@@ -6,35 +6,64 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Characters-->
         <scene sceneID="u2C-cY-KOE">
             <objects>
-                <tableViewController id="myD-ws-lAG" customClass="CountryTeamTableViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="myD-ws-lAG" customClass="PersonSearchTableViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="roR-cG-wFw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="QVt-bn-zhB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" textLabel="3Qv-iy-kwy" style="IBUITableViewCellStyleDefault" id="EmY-Es-ZVk">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="74" id="EmY-Es-ZVk" customClass="PersonTableViewCell" customModule="HarryPotter_Api" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EmY-Es-ZVk" id="glH-G0-UbD">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Qv-iy-kwy">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mlT-ut-jsu">
+                                            <rect key="frame" x="20" y="0.0" width="77" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-O7-Wli">
+                                                    <rect key="frame" x="0.0" y="0.0" width="67.5" height="29"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oI-Dx-wfl">
+                                                    <rect key="frame" x="0.0" y="29" width="30" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AJ-Xm-LxB">
+                                                    <rect key="frame" x="0.0" y="49.5" width="77" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mlT-ut-jsu" firstAttribute="leading" secondItem="glH-G0-UbD" secondAttribute="leading" constant="20" id="55W-qB-bfX"/>
+                                        <constraint firstItem="mlT-ut-jsu" firstAttribute="top" secondItem="glH-G0-UbD" secondAttribute="top" id="tch-Ac-093"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageLabel" destination="4oI-Dx-wfl" id="49y-qp-hNy"/>
+                                    <outlet property="colorLabel" destination="9AJ-Xm-LxB" id="z5g-xu-p0K"/>
+                                    <outlet property="nameLabel" destination="c0d-O7-Wli" id="WtO-ub-eMk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -43,48 +72,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Characters" id="HZE-q7-5r9">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Bft-e6-oiJ">
-                            <connections>
-                                <segue destination="fhv-sS-hZG" kind="show" identifier="PersonSearch" id="rL4-ct-StS"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Bft-e6-oiJ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="QVt-bn-zhB" id="0GG-LW-HGj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u21-6R-yBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1150.7246376811595" y="104.46428571428571"/>
-        </scene>
-        <!--Search a Character-->
-        <scene sceneID="Jut-Zb-wox">
-            <objects>
-                <viewController id="fhv-sS-hZG" customClass="CountrySearchViewController" customModule="HarryPotter_Api" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3Zs-BE-ntl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yFb-AB-Jxk">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="yFb-AB-Jxk" firstAttribute="top" secondItem="ZA0-X9-Oa1" secondAttribute="top" id="0K3-JF-7RW"/>
-                            <constraint firstItem="yFb-AB-Jxk" firstAttribute="trailing" secondItem="ZA0-X9-Oa1" secondAttribute="trailing" id="FAK-qx-CcW"/>
-                            <constraint firstItem="yFb-AB-Jxk" firstAttribute="leading" secondItem="ZA0-X9-Oa1" secondAttribute="leading" id="yjK-ub-dpG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZA0-X9-Oa1"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Search a Character" id="7Ub-Qc-Z01">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="uUN-FW-cYU"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="searchBar" destination="yFb-AB-Jxk" id="wvB-ti-gyY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3wo-9r-ps3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1945" y="-237"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aD1-1y-zYk">

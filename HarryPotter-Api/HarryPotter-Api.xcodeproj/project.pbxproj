@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4556A5E7232DAD4400FD0CC5 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5E6232DAD4400FD0CC5 /* APIController.swift */; };
-		4556A5E9232DB20D00FD0CC5 /* CountryTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5E8232DB20D00FD0CC5 /* CountryTeamTableViewController.swift */; };
-		4556A5EB232DB23B00FD0CC5 /* CountrySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5EA232DB23B00FD0CC5 /* CountrySearchViewController.swift */; };
-		45849370232DA999000EBA15 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4584936F232DA999000EBA15 /* Country.swift */; };
+		4556A5ED232DC85800FD0CC5 /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5EC232DC85700FD0CC5 /* PersonSearchTableViewController.swift */; };
+		4556A5EF232DC88A00FD0CC5 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5EE232DC88A00FD0CC5 /* PersonTableViewCell.swift */; };
+		4556A5F1232DC8F500FD0CC5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5F0232DC8F500FD0CC5 /* Person.swift */; };
+		4556A5F3232DCAD300FD0CC5 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A5F2232DCAD300FD0CC5 /* PersonController.swift */; };
 		45F0F77723255F7A00B4FF8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F77623255F7A00B4FF8A /* AppDelegate.swift */; };
 		45F0F77C23255F7A00B4FF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F0F77A23255F7A00B4FF8A /* Main.storyboard */; };
 		45F0F77E23255F7B00B4FF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F0F77D23255F7B00B4FF8A /* Assets.xcassets */; };
@@ -18,10 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4556A5E6232DAD4400FD0CC5 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		4556A5E8232DB20D00FD0CC5 /* CountryTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTeamTableViewController.swift; sourceTree = "<group>"; };
-		4556A5EA232DB23B00FD0CC5 /* CountrySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchViewController.swift; sourceTree = "<group>"; };
-		4584936F232DA999000EBA15 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		4556A5EC232DC85700FD0CC5 /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
+		4556A5EE232DC88A00FD0CC5 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		4556A5F0232DC8F500FD0CC5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4556A5F2232DCAD300FD0CC5 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		45F0F77323255F7A00B4FF8A /* HarryPotter-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HarryPotter-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F0F77623255F7A00B4FF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F0F77B23255F7A00B4FF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		458493292329EBA2000EBA15 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4556A5E6232DAD4400FD0CC5 /* APIController.swift */,
+				4556A5F2232DCAD300FD0CC5 /* PersonController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -52,9 +52,10 @@
 		45F0F76A23255F7A00B4FF8A = {
 			isa = PBXGroup;
 			children = (
-				458493292329EBA2000EBA15 /* Model Controller */,
-				45F0F78F2325618200B4FF8A /* Model */,
+				4556A5EE232DC88A00FD0CC5 /* PersonTableViewCell.swift */,
 				45F0F78C2325611700B4FF8A /* View Controllers */,
+				45F0F78F2325618200B4FF8A /* Model */,
+				458493292329EBA2000EBA15 /* Model Controller */,
 				45F0F77523255F7A00B4FF8A /* HarryPotter-Api */,
 				45F0F77423255F7A00B4FF8A /* Products */,
 			);
@@ -83,8 +84,7 @@
 		45F0F78C2325611700B4FF8A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4556A5EA232DB23B00FD0CC5 /* CountrySearchViewController.swift */,
-				4556A5E8232DB20D00FD0CC5 /* CountryTeamTableViewController.swift */,
+				4556A5EC232DC85700FD0CC5 /* PersonSearchTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 		45F0F78F2325618200B4FF8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4584936F232DA999000EBA15 /* Country.swift */,
+				4556A5F0232DC8F500FD0CC5 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,11 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45849370232DA999000EBA15 /* Country.swift in Sources */,
-				4556A5E9232DB20D00FD0CC5 /* CountryTeamTableViewController.swift in Sources */,
-				4556A5EB232DB23B00FD0CC5 /* CountrySearchViewController.swift in Sources */,
+				4556A5EF232DC88A00FD0CC5 /* PersonTableViewCell.swift in Sources */,
+				4556A5ED232DC85800FD0CC5 /* PersonSearchTableViewController.swift in Sources */,
+				4556A5F1232DC8F500FD0CC5 /* Person.swift in Sources */,
+				4556A5F3232DCAD300FD0CC5 /* PersonController.swift in Sources */,
 				45F0F77723255F7A00B4FF8A /* AppDelegate.swift in Sources */,
-				4556A5E7232DAD4400FD0CC5 /* APIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
