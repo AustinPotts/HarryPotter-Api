@@ -15,6 +15,9 @@ class PersonTableViewCell: UITableViewCell {
     @IBOutlet weak var ageLabel: UILabel!
     
     @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var eyeColor: UILabel!
     
     var person: Person? {
         didSet {
@@ -28,6 +31,9 @@ class PersonTableViewCell: UITableViewCell {
         nameLabel.text = person.name
         ageLabel.text = person.birthYear
         colorLabel.text = "Hair color: \(person.hairColor)"
+        genderLabel.text = "Gender: \(person.gender)"
+        heightLabel.text = "Height: \(person.height)"
+        eyeColor.text = "Eye Color: \(person.eyeColor)"
     }
 
 }

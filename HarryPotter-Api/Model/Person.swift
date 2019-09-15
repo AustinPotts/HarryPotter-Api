@@ -19,10 +19,17 @@ struct Person: Codable {
         case name
         case birthYear = "birth_year"
         case hairColor = "hair_color"
+        case gender
+        case height
+        case eyeColor = "eye_color"
+        
     }
     
     let name: String
     let birthYear: String
     let hairColor: String
+    let gender: String
+    let height: String
+    let eyeColor: String
     
 }
