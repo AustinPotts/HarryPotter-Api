@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Potter" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-Mm-Kgs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wars" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-Mm-Kgs">
                                 <rect key="frame" x="0.0" y="280" width="414" height="278"/>
                             </imageView>
                         </subviews>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Potter" width="1517" height="1100"/>
+        <image name="Wars" width="1280" height="720"/>
     </resources>
 </document>
