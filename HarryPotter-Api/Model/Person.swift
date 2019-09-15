@@ -22,6 +22,8 @@ struct Person: Codable {
         case gender
         case height
         case eyeColor = "eye_color"
+        case mass
+        case skinColor = "skin_color"
         
     }
     
@@ -31,5 +33,6 @@ struct Person: Codable {
     let gender: String
     let height: String
     let eyeColor: String
-    
+    let mass: String
+    let skinColor: String
 }

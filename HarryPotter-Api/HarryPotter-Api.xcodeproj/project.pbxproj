@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4556A5F4232DD98000FD0CC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4556A5EE232DC88A00FD0CC5 /* PersonTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		458493292329EBA2000EBA15 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +60,7 @@
 		45F0F76A23255F7A00B4FF8A = {
 			isa = PBXGroup;
 			children = (
-				4556A5EE232DC88A00FD0CC5 /* PersonTableViewCell.swift */,
+				4556A5F4232DD98000FD0CC5 /* View */,
 				45F0F78C2325611700B4FF8A /* View Controllers */,
 				45F0F78F2325618200B4FF8A /* Model */,
 				458493292329EBA2000EBA15 /* Model Controller */,
